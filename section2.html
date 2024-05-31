@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Insurance Company</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+    flex-direction: column-reverse;
+  }
+
+  .benefits {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+header, main, footer {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Styles (Media Queries) */
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .benefit-card {
+    margin-bottom: 20px;
+    width: 48%;
+  }
+}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Get Peace of Mind with Personalized Insurance Solutions</h1>
+        <p>We offer a wide range of insurance products to protect what matters most.</p>
+        <a href="#" class="btn">Get a Quote</a>
+      </div>
+      <img src="hero-image.jpg" alt="Family enjoying vacation home">
+    </section>
+    <section class="benefits">
+      <h2>Why Choose Us?</h2>
+      <div class="benefit-card">
+        <img src="icon-trust.svg" alt="Trustworthy">
+        <h3>Trusted Coverage</h3>
+        <p>We've been protecting families for over 20 years.</p>
+      </div>
+      <div class="benefit-card">
+        <img src="icon-affordable.svg" alt="Affordable">
+        <h3>Affordable Rates</h3>
+        <p>Get the coverage you need without breaking the bank.</p>
+      </div>
+      <div class="benefit-card">
+        <img src="icon-support.svg" alt="Support">
+        <h3>24/7 Customer Support</h3>
+        <p>Our team is always here to help you with any questions.</p>
+      </div>
+    </section>
+    </main>
+  <footer>
+    <p>&copy; 2024 Your Insurance Company. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

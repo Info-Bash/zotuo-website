@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get-A-Quote</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSideBar();"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="#"><img src="images/Logotype.png" alt="logo"></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="coverages.html">Coverage</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="#"><img src="images/Logotype.png" alt="logo"></a></li>
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+      <li class="hideOnMobile"><a href="coverages.html">Coverage</a></li>
+      <li class="menu-button" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <nav class="navbar2">
+    <p>GET A QUOTE PAGE</p>
+  </nav>
+
+  <section class="section3">
+    
+    <div class="form-container">
+      <h2 style="margin-bottom: 20px;">Get A Quote</h2>
+        <form id="userForm" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="John">
+              </div>
+              
+              <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+              </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="bash.doe@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+1 (123) 456-7890">
+                </div>
+            </div>
+    
+            <div class="checkbox-group">
+                <input type="checkbox" id="Opt-in" name="Opt-in">
+                <label class="checkbox-label" for="subscribe"> Opt-in to marketing and promotional messages</label>
+            </div>
+    
+            <div class="terms-text">
+              By clicking "Get-A-Quote", I am giving Zotuo explicit permission to send me details about Zotuo products. Zotuo may contact me via phone call or text (including recurring SMS or MMS) using automated technology or prerecorded messages at the phone number I provided, even if my number is on a state or Federal Do Not Call List. Entering into this agreement is not a requirement for purchasing property, goods, or services. Standard message and data rates may apply. Message frequency may vary. To opt out, text STOP; for assistance, text HELP. For more details, refer to the <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Notice</a>, and <a href="text-consent.html">Text Consent</a>.
+            </div>
+    
+            <div class="checkbox-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label class="checkbox-label" for="agree">I agree to the terms and conditions</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Get-A-Quote">
+            </div>
+        </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    
+      <div class="footer-nav">
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="text-consent.html">Test Consent</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="policy.html">Do-Not-Call-Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy;2024; Designed by <span><a href="https://www.fiverr.com/paulomanme">Paulo</span></a></p>
+    </div>
+  </footer>
+  
+    <script src="js/script.js"></script>
+  </body>
+  </html>
